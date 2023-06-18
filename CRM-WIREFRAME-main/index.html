@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory DashBoard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .somecard:hover {
+      transform: translateY(-5px);
+
+      background-color: lightblue;
+    }
+
+    .somecard:hover .fa {
+      transform: translateY(-2px);
+    }
+    body{
+      background-image: url("https://www.tftdryair.com/wp-content/uploads/2019/02/3d-background.jpg");
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <img class="home-logo" src="https://pf.com.pk/wp-content/uploads/2022/01/programmer-blue.svg" alt="logo"
+        width="100px" height="59px">
+      <button class="btn btn-primary" style="margin-left:100px; " type="button"><a href="index.html"
+          class="text-decoration-none text-reset fw-bold">Home</a></button>
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary"><a class="dropdown-item text-success text-reset"
+            href="login.html">Log in</a></button>
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-user"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="edit.html">Edit Profile</a></li>
+          <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+          <li><a class="dropdown-item" href="login.html">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- sidebar -->
+  <div class="d-flex">
+    <div class="sidebar w-25 bg-dark align-items-center"
+      style="height: 100vh; background-image: url(https://img.freepik.com/free-vector/beautiful-blue-watercolor-texture-background_1035-20478.jpg?size=626&ext=jpg&ga=GA1.1.162227864.1686034352&semt=ais);">
+      <div class="d-grid w-50 m-auto ">
+        <button class="btn btn-primary shadow my-3" type="button"><a href="index.html"
+            class="text-decoration-none text-reset fw-bold">DASHBOARD</a></button>
+      </div>
+      <hr>
+      <div class="sidebar-body">
+        <!-- 1st dropdown -->
+        <div class="dropdown mt-2 mb-5 w-50 m-auto ">
+          <button class="btn btn-primary shadow  dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Bill
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item " href="createbill.html">create</a></li>
+          </ul>
+        </div>
+
+        <!-- 2nd dropdown -->
+        <div class="dropdown mt-2 mb-5 w-50 m-auto">
+          <button class="btn btn-primary shadow  dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Stocks
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="totalstock.html">Total Stock</a></li>
+            <li><a class="dropdown-item" href="remstock.html">Remaining Stock</a></li>
+            <li><a class="dropdown-item" href="stockforprod.html">Stock For Production</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mt-2 mb-5 w-50 m-auto">
+          <button type="button" class="btn btn-primary shadow w-100 mb-5">Product</button><br>
+
+          <button type="button" class="btn btn-primary shadow  w-100 mb-5"><a href="Best_Customer.html"
+              class="text-reset text-decoration-none">Best Customer</a></button><br>
+
+          <button type="button" class="btn btn-primary shadow  w-100">Total Sales</button><br>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+
+
+    <main>
+      <!-- Summary Cards -->
+      <div class="w-75 m-auto d-flex justify-content-evenly">
+        <div class="d-flex justify-content-evenly w-100 m-auto pt-1 my-3">
+          <div class="card somecard rounded" style="width: 15rem;">
+            <div class="card-body shadow">
+              <h6 class="card-title fw-bold">New User</h6>
+              <h1 class="card-text text-center">28</h1>
+              <div class="d-flex justify-content-center">
+                <i class="fa fa-sort-up fa-lg align-items-center mt-2" style="color: #04ff00;"></i>
+                <p class="text-center">11%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card somecard rounded" style="width: 15rem;">
+            <div class="card-body shadow">
+              <h6 class="card-title fw-bold">Revenue, $</h6>
+              <h1 class="card-text text-center">$400k</h1>
+              <div class="d-flex justify-content-center">
+                <i class="fa fa-sort-up fa-lg align-items-center mt-2" style="color: #04ff00;"></i>
+                <p class="text-center">21.23%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card  somecard rounded" style="width: 15rem;">
+            <div class="card-body shadow">
+              <h6 class="card-title fw-bold">Conversions</h6>
+              <h1 class="card-text text-center">17%</h1>
+              <div class="d-flex justify-content-center">
+                <i class="fa fa-sort-down fa-lg align-items-center" style="color: #ff0000;"></i>
+                <p class="text-center">7.23%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card somecard rounded" style="width: 15rem;">
+            <div class="card-body shadow">
+              <h6 class="card-title fw-bold">Net Revenue, $</h6>
+              <h1 class="card-text text-center">$198k</h1>
+              <div class="d-flex justify-content-center">
+                <i class="fa fa-sort-up fa-lg align-items-center mt-2" style="color: #04ff00;"></i>
+                <p class="text-center">18.23%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Chart Representation-->
+      <div class=" card w-75 m-auto mt-3 pt-1 border border-light-subtle shadow rounded">
+
+        <div class="card-body">
+          <h5 class="card-title position-absolute top-0 end-0">
+            <button onclick="document.getElementById('saleschart').src='monthlychart.jpg'" type="button"
+              class="btn btn-primary mt-3 me-1">Montly</button>
+            <button onclick="document.getElementById('saleschart').src='weeklychart.jpg'" type="button"
+              class="btn btn-primary mt-3 me-3">Weekly</button>
+
+
+          </h5>
+          <img src="monthlychart.jpg" class="card-img-bottom " id="saleschart" alt="..." style="height: px;">
+
+        </div>
+
+      </div>
+
+
+      <!-- Sales by product -->
+      <div class="w-75 m-auto my-4 pt-1 border border-light-subtle shadow-lg rounded">
+        <div class="ms-2 m-auto rounded text-white fw-bold " style="text-shadow: 2px 2px 5px rgb(12, 12, 12);">
+          <h3>SALES BY PRODUCT</h3>
+        </div>
+        <div class="table-responsive rounded">
+          <table class="table mt-1 m-auto">
+            <thead>
+              <tr class="table-secondary">
+                <th scope="col">Products</th>
+                <th scope="col">Amount</th>
+                <th scope="col">% Sold</th>
+                <th scope="col">Percentages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product-1</td>
+                <td>$385k</td>
+                <td>70.15%</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 70%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Product-2</td>
+                <td>$165k</td>
+                <td>35.26%</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="35" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 35%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Product-3</td>
+                <td>$270k</td>
+                <td>55.26%</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 55%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Product-4</td>
+                <td>$97k</td>
+                <td>20.22%</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 20%"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sales by product -->
+      <div class="w-75 m-auto my-4 pt-1 border border-light-subtle shadow-lg rounded">
+        <div class="ms-2 m-auto rounded text-white fw-bold " style="text-shadow: 2px 2px 5px rgb(12, 12, 12);">
+          <h3>RECENT ACTIVITIES</h3>
+        </div>
+        <div class="table-responsive rounded">
+          <table class="table mt-1 m-auto">
+            <thead>
+              <tr class="table-secondary">
+                <th scope="col">Date</th>
+                <th scope="col">Activity</th>
+                <th scope="col">User</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-06-07</td>
+                <td>Added new product</td>
+                <td>John Doe</td>
+                <td><span class="badge bg-success">Completed</span></td>
+              </tr>
+              <tr>
+                <td>2023-06-06</td>
+                <td>Updated stock</td>
+                <td>Jane Smith</td>
+                <td><span class="badge bg-success">Completed</span></td>
+              </tr>
+              <tr>
+                <td>2023-06-05</td>
+                <td>Created new bill</td>
+                <td>Michael Johnson</td>
+                <td><span class="badge bg-warning text-dark">Pending</span></td>
+              </tr>
+              <tr>
+                <td>2023-06-04</td>
+                <td>Deleted customer record</td>
+                <td>Emily Davis</td>
+                <td><span class="badge bg-success">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+  </div>
+  </div>
+  </main>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
